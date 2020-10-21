@@ -1,0 +1,24 @@
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+h1, h2 {
+  text-align: center;
+}
+
+.navbar {
+  border-bottom: 1px solid #000000;
+}
+.section {
+  color: #FFFFFF;
+  background-color: #000000;
+}
+
+.title {
+  color: #FFFFFF;
+}
+
+.subtitle {
+  color: #FFFFFF;
+}
