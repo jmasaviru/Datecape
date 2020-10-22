@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- EXTERNAL BULMA CSS FILE -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- EXTERNAL CSS FILE -->
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  </head>
+
+    <body>
+        <form>  
+            <section class="hero is-warning">
+                <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Enter the Date of Your Outing
+                    </h1>
+                </div>
+                </div>
+            </section>
+            
+            <div style="overflow:hidden;">
+                <div class="form-group">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="datetimepicker12"></div>
+                    </div>
+                </div>
+                </div>
+                <script type="text/javascript">
+                $(function () {
+                    $('#datetimepicker12').datetimepicker({
+                        inline: true,
+                        sideBySide: true
+                    });
+                });
+                </script>
+            </div>
+
+            <section class="hero is-dark">
+                <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Enter the Location of Your Outing
+                    </h1>
+                </div>
+                </div>
+            </section>
+            <div class="form-group">
+                <label for="exampleFormControlLocation">City, Town or Zip Code</label>
+                <input type="text" class="form-control margin-bottom" placeholder="City, Town or Zipcode">
+            </div>
+
+            <section class="hero">
+                <div class="hero-body">
+                    <img alt="Date Cape Logo" src="./images/GoldLine2.png">
+                </div>
+            </section>
+
+            <section class="hero is-primary">
+                <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Select Date Night Activity
+                    </h1>
+                </div>
+                </div>
+            </section>
+
+            <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Restuarants</label>
+            </div>
+            <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Breweries</label>
+            </div>
+            <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Events</label>
+            </div>
+            <div class="custom-control form-control-lg custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Landmarks</label>
+            </div>
+
+            <hr style="width:50%;text-align:right;margin-left:0.5">
+
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            <hr>
+        </form>            
+  </body>
+</html>
