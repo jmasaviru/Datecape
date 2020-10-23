@@ -3,22 +3,61 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-h1, h2 {
+figure {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1, h2, h3, #p2 {
   text-align: center;
 }
+
+#p1 {
+  text-align: center;
+  color: #FFFFFF
+}
+
+/* #dateImage {
+  width: 850px;
+  height: 600px;
+} */
 
 .navbar {
   border-bottom: 1px solid #000000;
 }
-.section {
+
+#about {
   color: #FFFFFF;
+  background-color: #000000;
+  overflow: auto;
+}
+
+#getStarted {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+#social {
   background-color: #000000;
 }
 
-.title {
+#h1 {
   color: #FFFFFF;
+  font-size: 40px;
 }
 
-.subtitle {
-  color: #FFFFFF;
+#h3, #p2 {
+  color: #000000;
+}
+
+.column {
+  font-size: 20px;
+}
+.columns {
+  text-align: center;
+}
+
+p {
+  font-size: 13px;
 }
