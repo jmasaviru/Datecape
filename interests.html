@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CDN FOR BULMA CSS FRAMEWORK -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <!-- CDN FOR FLATPICKR -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css">
+    <!-- EXTERNAL CSS FILE -->
+    <link href="style.css" rel="stylesheet">
+    <!-- SCRIPT FOR FONT -->
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <title> DateCape | Select Your Interests</title>
+  </head>
+
+    <body>
+        <form>
+            <section class="hero is-warning">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            Enter the Date of Your Outing
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <div class="field">
+                <div class="control">
+                    <input type="text" class="input is-rounded is-medium is-warning" id="basicDate" placeholder="Please select Date Time" data-input>
+                </div>
+            </div>
+            <br>
+            <section class="hero is-dark">
+             <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                        Enter the Location of Your Outing
+                    </h1>
+                </div>
+             </div>
+            </section>
+            <br>
+            <div class="field">
+                <div class="control">
+                    <input type="text" class="input is-rounded is-medium is-dark" id="cityTown" placeholder="City or Town">
+                </div>
+            </div>
+            <br>
+            <section class="hero is-warning">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                            Select Date Night Activity
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <div class="checkboxes">
+                <label class="checkbox"><input id="restaurant" type="checkbox"> <span>Restaurant</span> </label></span>
+                <label class="checkbox"><input id="brewery" type="checkbox"> <span>Brewery</span> </label>
+                <label class="checkbox"><input id="events" type="checkbox"> <span>Events</span> </label>
+                <label class="checkbox"><input id="wineBar" type="checkbox"> <span>Wine Bar</span> </label>   
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            <hr>
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+        <script>
+          $("#basicDate").flatpickr({
+            enableTime: true,
+            dateFormat: "F, d Y H:i",
+          }); 
+          </script>  
+  </body>
+</html>
