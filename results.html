@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CDN FOR BULMA CSS FRAMEWORK-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <!-- EXTERNAL CSS FILE -->
+        <link href="style.css" rel="stylesheet">
+        <title> DateCape </title>
+    </head>
+    <body>
+       <header>
+            <!-- NAVBAR -->
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="index.html">
+                <img src="./images/datecapelogo2.png" width="112" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu is-active">
+                <div class="navbar-start">
+                <a class="navbar-item" href="index.html"> Home </a>
+                <a class="navbar-item" href="about.html"> About </a>
+                </div>
+            </div>
+
+            <div class="navbar-end">
+                <div class="navbar-item">
+                <div class="buttons">
+                    <a class="button is-dark" href="signup.html">
+                    <strong>Sign up</strong>
+                    </a>
+                </div>
+                </div>
+            </div>
+            </nav>
+       </header>
+
+      <!-- HERO SECTION -->
+      <section class="hero is-medium">
+            <div class="hero-body">
+                <img alt="Date Cape Logo" src="./images/datecapelogo2.png">
+            </div>
+      </section>
+      <section class="hero is-medium">
+            <div class="hero-body">
+                <div id="weatherResults"></div>
+            </div>
+      </section>
+      <section class="hero is-medium">
+            <div class="hero-body">
+                <div id="restaurantResults"></div>
+            </div>
+      </section>
+      <section class="hero is-medium">
+            <div class="hero-body">
+                <div id="eventResults"></div>
+            </div>
+      </section>
+    </body>
+</html>
