@@ -1,50 +1,31 @@
+/* STYLING FOR NAVBAR */
+.navbar {
+  border-bottom: 1px solid #000000;
+}
+
+/* STYLING FOR LOGO IMAGES */
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-#column {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-h1, h2, h3, #p2 {
-  text-align: center;
-}
-
-#p1 {
-  text-align: center;
-  color: #FFFFFF
-}
-
-.navbar {
-  border-bottom: 1px solid #000000;
-}
-
+/* STYLING FOR ABOUT SECTION ON HOME PAGE */
 #about {
   color: #FFFFFF;
   background-color: #000000;
   overflow: auto;
 }
 
+/* STYLING FOR GET STARTED SECTION ON HOME PAGE */
 #getStarted {
   color: #000000;
   background-color: #FFFFFF;
 }
 
-button {
-  margin: 0 auto;
-  display: block;
-}
-
-#social {
-  background-color: #000000;
+/* STYLING FOR HEADING TITLES */
+h1, h2, h3, #p2 {
   text-align: center;
-}
-
-#socialIcons {
-  display: inline-block;
 }
 
 #h1 {
@@ -56,30 +37,76 @@ button {
   color: #000000;
 }
 
-.column {
-  font-size: 20px;
-}
-.columns {
+#p1 {
   text-align: center;
+  color: #FFFFFF
 }
 
 p {
   font-size: 13px;
 }
 
+/* STYLING FOR COLUMNS IN ABOUT AND GET STARTED SECTION */
+.columns {
+  text-align: center;
+}
+
+.column {
+  font-size: 20px;
+}
+
+#column {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* STYLING FOR GET STARTED BUTTON ON HOME PAGE */
+#button {
+  margin: 0 auto;
+  display: block;
+}
+
+/* STYLING FOR SOCIAL MEDIA SECTIONS ON HOME AND ABOUT PAGES */
+#social {
+  text-align: center;
+}
+
+/* STYLING FOR SOCIAL MEDIA ICONS IN SOCIAL MEDIA SECTION */
+#socialIcons {
+  display: inline-block;
+}
+
+/* STYLING FOR NAME INPUT ON SIGN UP PAGE */
+#name {
+  width: 900px;
+  height: 50px;
+}
+
+/* STYLING FOR EMAIL INPUT ON SIGN UP PAGE */
+#email {
+  width: 900px;
+  height: 50px;
+}
+
+/* STYLING FOR ALL INPUTS */
 .control {
   text-align: center;
 }
 
+/* STYLING FOR DATE SECTION ON INTERESTS PAGE */
 #basicDate {
   width: 300px;
   height: 50px;
 }
 
+/* STYLING FOR LOCATION SECTION ON INTERESTS PAGE */
 #cityTown {
   width: 300px;
   height: 50px;
 }
+
+/* STYLING FOR CHECKBOXES IN ACTIVITIES SECTION ON INTERESTS PAGE */
 .checkbox {
   display: block;
   text-align: center;
@@ -90,8 +117,9 @@ span {
   vertical-align: middle;
 }
 
-/*.checkboxes {*/
-  /*position: relative;
- vertical-align: middle;
- bottom: 1px;*/
-}
+/* STYLING FOR SUBMIT BUTTON ON INTERESTS PAGE */
+ #submit {
+  margin: 0 auto;
+  display: block;
+ }
+
