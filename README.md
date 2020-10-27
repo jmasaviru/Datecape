@@ -1,5 +1,5 @@
 # DateCape
-DateCape is a date planning service app that aims to simplify and remove the stress of date night planning.
+DateCape is a date night planning service app that aims to simplify and remove the stress of date night planning.
 ## Motivation
 The motivation behind this project was to create an application that could provide an easy-to-use, interactive, and responsive interface that gives users ideas for special outings and date night planning. The app will gather basic user information on the initial registration page, such as their name. The next screen will obtain the user’s date night parameters: date of outing, activity interests (restaurants, events, local landmarks, etc) and name of city. The user will be provided with activity options based on their selections along with the weather conditions based on the city entered.
 
