@@ -110,7 +110,10 @@ p {
 .checkbox {
   display: block;
   text-align: center;
-  
+}  
+.checkbox input, .radio input {
+  cursor: pointer;
+  vertical-align: sub;
 }
 
 span {
