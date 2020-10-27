@@ -10,7 +10,7 @@ The motivation behind this project was to create an application that could provi
 ## Code Example
 Here is an example of how the password generator works:
 
-![DateCape Demo]()
+![DateCape Demo](https://github.com/jmasaviru/datecape/blob/main/Images/DateCapeDemo.gif)
 
 ## Features
 * Responsive user interface
