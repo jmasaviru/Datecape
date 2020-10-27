@@ -8,7 +8,7 @@ The motivation behind this project was to create an application that could provi
 * Bulma CSS Framework
 * Flatpickr as Date/Time Picker
 ## Code Example
-Here is an example of how the password generator works:
+Here is an example of how DateCape works:
 
 ![DateCape Demo](https://github.com/jmasaviru/datecape/blob/main/Images/DateCapeDemo.gif)
 
