@@ -62,13 +62,13 @@ p {
 }
 
 /* STYLING FOR GET STARTED BUTTON ON HOME PAGE */
-#button {
+#getStartedButton {
   margin: 0 auto;
   display: block;
 }
 
 /* STYLING FOR SOCIAL MEDIA SECTIONS ON HOME AND ABOUT PAGES */
-#social {
+#socialDiv {
   text-align: center;
 }
 
@@ -83,11 +83,11 @@ p {
   height: 50px;
 }
 
-/* STYLING FOR EMAIL INPUT ON SIGN UP PAGE */
-#email {
-  width: 900px;
-  height: 50px;
-}
+/* STYLING FOR SUBMIT BUTTON ON SIGN UP PAGE */
+#signUpSubmit {
+  margin: 0 auto;
+  display: block;
+ }
 
 /* STYLING FOR ALL INPUTS */
 .control {
@@ -120,9 +120,30 @@ span {
   vertical-align: middle;
 }
 
-/* STYLING FOR SUBMIT BUTTON ON INTERESTS PAGE */
- #submit {
+/* STYLING FOR SUBMIT BUTTON ON SIGN UP PAGE */
+ #signUpSubmit {
   margin: 0 auto;
   display: block;
  }
 
+ #interestsButton {
+  margin: 0 auto;
+  display: block;
+ }
+
+ /* STYLING FOR WEATHER DIV ON RESULTS PAGE */
+ #weatherTitle {
+   font-size: 50px;
+ }
+
+ #cityName {
+   text-align: center;
+ }
+
+ #name {
+  font-size: 40px;
+}
+
+#weatherDesc {
+  font-size: 20px;
+}
