@@ -44,7 +44,7 @@ $(document).ready(function(){
   
     // FUNCTION FOR WHEN SUBMIT BUTTON IS CLICKED ON INTERESTS PAGE
     $("#interestsButton").click(function(){
-        $("#userInput2").append($("#enterName").val()+", here are your results!");
+        $("#userInput2").append($("#enterName").val()+", here are your results for ").append($("#basicDate").val());
         $("#logoDiv").hide();
         $("#about").hide();
         $("#getStartedDiv").hide();
