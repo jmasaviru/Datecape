@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- CDN FOR BULMA CSS FRAMEWORK-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <!-- CDN FOR FLATPICKR -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css">
         <!-- EXTERNAL CSS FILE -->
         <link href="style.css" rel="stylesheet">
         <!-- TITLE -->
@@ -12,161 +15,296 @@
     </head>
 
     <body>
-      <header>
-        <!-- NAVBAR -->
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a alt="Home Link" class="navbar-item" href="index.html">
-              <img alt="DateCape Logo" src="./Images/DateCapeLogo2.png" width="112" height="28">
-            </a>
+        <header>
+            <!-- NAVBAR -->
+            <nav class="navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a alt="Home Link" class="navbar-item" href="index.html">
+                      <img alt="DateCape Logo" src="./Images/DateCapeLogo2.png" width="112" height="28">
+                    </a>
 
-            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
+                    <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                      <span aria-hidden="true"></span>
+                    </a>
+                </div>
+
+                <div id="navbarBasicExample" class="navbar-menu is-active">
+                    <div class="navbar-start">
+                      <a alt="Home Button" class="navbar-item" href="index.html"> Home </a>
+                      <a alt="About Button" class="navbar-item" href="about.html"> About </a>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a id="navButton" alt="Get Started Button" class="button is-dark">
+                              <strong>Get Started</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+      
+        <!-- HERO SECTION -->
+        <section id="logoDiv" class="hero">
+            <div  class="hero-body">
+              <img alt="DateCape Logo" src="./Images/DateCapeLogo2.png">
+            </div>
+        </section>
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="section is-medium" >
+          <div class="container">
+            <h1 class="title" id="h1">What We Do</h1>
+            <br>
+            <h2 class="subtitle" id="p1">
+              DateCape simplifies and removes the stress of date night planning, all in a few clicks!
+            </h2>
           </div>
-
-          <div id="navbarBasicExample" class="navbar-menu is-active">
-            <div class="navbar-start">
-              <a alt="Home Button" class="navbar-item" href="index.html"> Home </a>
-              <a alt="About Button" class="navbar-item" href="about.html"> About </a>
+          <br>
+          <br>
+          <div class="columns">
+            <div class="column"> First Dates
+              <figure id="column" class="image is-256x256">
+                <img alt="First Date" class="is-rounded" src="./Images/firstDate.jpg">
+              </figure>
+              <br>
+              <p> Looking for a simple or special place for the one you've had your eye on? We got you covered! </p>
+            </div>
+            <div class="column"> Date Nights
+              <figure id="column" class="image is-256x256">
+                <img alt="Date Night" class="is-rounded" src="./Images/dateImage2.jpg">
+              </figure>
+              <br>
+              <p> Trying to spice things up with the one you've been loving? We can help with that too! </p>
+            </div>
+            <div class="column"> Friendly Outings
+              <figure id="column" class="image is-256x256">
+                <img alt="Friendly Outing" class="is-rounded" src="./Images/friends1.jpg">
+              </figure>
+              <br>
+              <p> It's been a minute, and you want to hang out with the guys or gals? We have ideas in mind! </p>
+            </div>
+            <div class="column"> Anniversaries
+              <figure id="column" class="image is-256x256">
+                <img alt="Anniversary" class="is-rounded" src="./Images/anniversary.jpg">
+              </figure>
+              <br>
+              <p> Want to show that special someone why all these years have been worth it? You came to the right place! </p>
             </div>
           </div>
+        </section>
 
-          <div class="navbar-end">
-            <div class="navbar-item">
-              <div class="buttons">
-                <a alt="Get Started Button" class="button is-dark" href="signup.html">
-                  <strong>Get Started</strong>
-                </a>
+        <!-- GET STARTED SECTION -->
+        <section  id="getStartedDiv" class="section is-medium">
+          <div class="container">
+            <h3 class="title" id="h3"> Plan Your Date </h3>
+            <br>
+            <h4 class="subtitle" id="p2">
+              Getting started is simple, just follow these three, easy steps!
+            </h4>
+            <br>
+          </div>
+          <div class="columns">
+            <div class="column"> Step 1
+              <figure id="column" class="image is-128x128">
+                <img alt="Point Icon" class="is-rounded" src="./Images/pointicon.png">
+              </figure>
+              <br>
+              <p> Click the link below </p>
+            </div>
+            <div class="column"> Step 2
+              <figure id="column" class="image is-128x128">
+                <img alt="Survey Icon" class="is-rounded" src="./Images/surveyicon.png">
+              </figure>
+              <br>
+              <p> Give your name & fill out the survey </p>
+            </div>
+            <div class="column"> Step 3
+              <figure id="column" class="image is-128x128">
+                <img alt="Email Icon" class="is-rounded" src="./Images/emailicon.png">
+              </figure>
+              <br>
+              <p> View your results! </p>
+            </div>
+          </div>
+          <br>
+          <br>
+          <div class="buttons">
+            <a alt="Get Started Button" id="getStartedButton" class="button is-large is-warning"> Get Started </a>
+          </div>
+        </section>
+
+        <!-- BEGINNING OF SIGN UP PAGE" -->
+        <section id="signUpDiv" class="hero is-small is-dark" style="display: none">
+          <div class="hero-body">
+              <h1 class="title" id="h1">Sign-up to start planning your special date!</h1>     
+          </div>
+         
+          <form onsubmit="return false">
+              <!-- NAME INPUT -->
+              <div class="control">
+                  <input id="enterName" name="name" class="input" type="text" placeholder="Enter your name...">
               </div>
+              <br>
+              <br>
+
+              <!-- SUBMIT BUTTON -->
+              <div class="submitButton">
+                  <input class="button is-rounded is-medium is-warning" id="signUpSubmit" type="submit" value="Submit">
+                  <br>
+                  <br>
+                  <br>
+              </div>
+          </form>
+        </section>
+
+        <!-- BEGINNING OF INTERESTS PAGE-->
+        <div id="userName" style="display: none">
+          <section class="hero">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 id="userInput" class="title"></h1>
+                    <h2 id="userInput2" class="title"></h2>
+                </div>
             </div>
-          </div>
-        </nav>
-      </header>
-
-      <!-- HERO SECTION -->
-      <section class="hero is-medium">
-        <div class="hero-body">
-          <img alt="DateCape Logo" src="./Images/DateCapeLogo2.png">
+          </section>
         </div>
-      </section>
 
-      <!-- ABOUT SECTION -->
-      <section class="section is-medium" id="about">
-        <div class="container">
-          <h1 class="title" id="h1">What We Do</h1>
+        <form id="interestsDiv" style="display: none" onsubmit="return false">
+            <!-- SECTION FOR DATE -->
+            <section class="hero is-warning">
+                <div class="hero-body">
+                    <div class="container">
+                        <h1 class="title">
+                          Enter the Date of Your Outing
+                        </h1>
+                    </div>
+                </div>
+            </section>
+            <br>
+            <div class="field">
+                <div class="control">
+                    <input type="text" class="input is-rounded is-medium is-warning" id="basicDate" placeholder="Please Select Date & Time" data-input>
+                </div>
+            </div>
           <br>
-          <h2 class="subtitle" id="p1">
-            DateCape simplifies and removes the stress of date night planning, all in a few clicks!
-          </h2>
-        </div>
-        <br>
-        <br>
-        <div class="columns">
-          <div class="column"> First Dates
-            <figure id="column" class="image is-256x256">
-              <img alt="First Date" class="is-rounded" src="./Images/firstDate.jpg">
-            </figure>
-            <br>
-            <p> Looking for a simple or special place for the one you've had your eye on? We got you covered! </p>
-          </div>
-          <div class="column"> Date Nights
-            <figure id="column" class="image is-256x256">
-              <img alt="Date Night" class="is-rounded" src="./Images/dateImage2.jpg">
-            </figure>
-            <br>
-            <p> Trying to spice things up with the one you've been loving? We can help with that too! </p>
-          </div>
-          <div class="column"> Friendly Outings
-            <figure id="column" class="image is-256x256">
-              <img alt="Friendly Outing" class="is-rounded" src="./Images/friends1.jpg">
-            </figure>
-            <br>
-            <p> It's been a minute, and you want to hang out with the guys or gals? We have ideas in mind! </p>
-          </div>
-          <div class="column"> Anniversaries
-            <figure id="column" class="image is-256x256">
-              <img alt="Anniversary" class="is-rounded" src="./Images/anniversary.jpg">
-            </figure>
-            <br>
-            <p> Want to show that special someone why all these years have been worth it? You came to the right place! </p>
-          </div>
-        </div>
-      </section>
 
-      <!-- GET STARTED SECTION -->
-      <section class="section is-medium" id="getStarted">
-        <div class="container">
-          <h3 class="title" id="h3"> Plan Your Date </h3>
+            <!-- SECTION FOR LOCATION -->
+            <section class="hero is-dark">
+              <div class="hero-body">
+                  <div class="container">
+                      <h2 class="title">
+                          Enter the Location of Your Outing
+                      </h2>
+                  </div>
+              </div>
+          </section>
           <br>
-          <h4 class="subtitle" id="p2">
-            Getting started is simple, just follow these three, easy steps!
-          </h4>
+          <div class="field">
+              <div class="control">
+                  <input type="text" class="input is-rounded is-medium is-dark" id="cityTown" placeholder="City or Town">
+              </div>
+          </div>
           <br>
-        </div>
-        <div class="columns">
-          <div class="column"> Step 1
-            <figure id="column" class="image is-128x128">
-              <img alt="Point Icon" class="is-rounded" src="./Images/pointicon.png">
-            </figure>
-            <br>
-            <p> Click the link below </p>
-          </div>
-          <div class="column"> Step 2
-            <figure id="column" class="image is-128x128">
-              <img alt="Survey Icon" class="is-rounded" src="./Images/surveyicon.png">
-            </figure>
-            <br>
-            <p> Give your name & fill out the survey </p>
-          </div>
-          <div class="column"> Step 3
-            <figure id="column" class="image is-128x128">
-              <img alt="Email Icon" class="is-rounded" src="./Images/emailicon.png">
-            </figure>
-            <br>
-            <p> View your results! </p>
-          </div>
-        </div>
-        <br>
-        <br>
-        <div class="buttons">
-          <a alt="Get Started Button" id="button" class="button is-large is-warning" href="signup.html"> Get Started </a>
-        </div>
-      </section>
 
-      <!-- SOCIAL MEDIA SECTION -->
-      <section class="hero is-small is-dark" id="social">
-        <div class="hero-body">
-          <figure id="socialIcons" class="image is-48x48">
-            <a alt="DateCape Facebook Link" href="https://www.facebook.com/Datecape">
-             <img alt="Facebook Icon" class="is-rounded" src="./Images/facebook.png">
-            </a>
-          </figure>
-          <figure id="socialIcons" class="image is-48x48">
-            <a alt="DateCape Twitter Link" href="https://twitter.com/Datecape1">
-              <img alt="Twitter Icon" class="is-rounded" src="./Images/twitter.png">
-            </a>
-          </figure> 
-          <figure id="socialIcons" class="image is-48x48">
-            <a alt="DateCape Instagram Link" href="https://www.instagram.com/date_cape/">
-              <img alt="Instagram Icon" class="is-rounded" src="./Images/instagram.png">
-            </a>
-          </figure>
-        </div>
-      </section>
+          <!-- SECTION FOR ACTIVITIES -->
+          <section class="hero is-warning">
+              <div class="hero-body">
+                  <div class="container">
+                      <h3 class="title">
+                          Select Date Night Activity
+                      </h3>
+                  </div>
+              </div>
+          </section>
+          <br>
+          <div class="checkboxes">
+              <label class="checkbox"><input id="restaurant" type="checkbox"> <span>Restaurant</span> </label></span>
+              <label class="checkbox"><input id="brewery" type="checkbox"> <span>Brewery</span> </label>
+              <label class="checkbox"><input id="events" type="checkbox"> <span>Night Club</span> </label>
+              <label class="checkbox"><input id="wineBar" type="checkbox"> <span>Wine Bar</span> </label>   
+          </div>
+          <br>
 
-      <!-- FOOTER -->
-      <footer class="footer">
-        <div class="content has-text-centered">
-          <p>
-            DateCape&copy 2020
-          </p>
-        </div>
-      </footer>
+          <!-- SUBMIT BUTTON -->
+          <div class="submitButton">
+              <input class="button is-rounded is-medium is-dark" id="interestsButton" type="submit" value="Submit">
+          </div>
+          <hr>
+        </form>
 
+        <!-- BEGINNING OF RESULTS PAGE -->
+
+        <!-- RESULTS FOR WEATHER-->
+        <section id="weatherDiv" class="hero is-small is-dark" style="display: none">
+          <div class="hero-body">
+              <div class="container">
+                <h1 id="weatherTitle" class="title">Weather</h1>
+                  <div id="cityName" class="card">
+                    <header class="card-header">
+                      <div class="card-header-title is-centered">
+                        <h2 class="name" id="name"></h2>
+                      </div>
+                    </header>
+                    <div class="card-content">  
+                      <p id="weatherDesc" class="temp"></p>
+                      <p id="weatherDesc" class="clouds"></p>
+                      <p id="weatherDesc" class="desc"></p>
+                    </div>  
+                  </div>  
+              <div> 
+          </div>
+        </section>
+
+        <!-- RESULTS FOR RESTAURANTS, NIGHTCLUBS, BARS, AND BREWERIES-->
+        <section id="restaurantDiv" class="hero is-medium is-warning" style="display: none">
+              <div class="hero-body">
+                  <div id="restaurantResults"></div>
+              </div>
+        </section>
+
+
+        <!-- SOCIAL MEDIA SECTION -->
+        <section id="socialDiv" class="hero is-small is-dark" >
+          <div class="hero-body">
+            <figure id="socialIcons" class="image is-48x48">
+              <a alt="DateCape Facebook Link" href="https://www.facebook.com/Datecape">
+              <img alt="Facebook Icon" class="is-rounded" src="./Images/facebook.png">
+              </a>
+            </figure>
+            <figure id="socialIcons" class="image is-48x48">
+              <a alt="DateCape Twitter Link" href="https://twitter.com/Datecape1">
+                <img alt="Twitter Icon" class="is-rounded" src="./Images/twitter.png">
+              </a>
+            </figure> 
+            <figure id="socialIcons" class="image is-48x48">
+              <a alt="DateCape Instagram Link" href="https://www.instagram.com/date_cape/">
+                <img alt="Instagram Icon" class="is-rounded" src="./Images/instagram.png">
+              </a>
+            </figure>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer id="footerDiv" class="footer">
+          <div class="content has-text-centered">
+            <p>
+              DateCape&copy 2020
+            </p>
+          </div>
+        </footer>
+
+      <!-- CDN FOR JQUERY -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <!-- CDN FOR FLATPICKR JAVASCRIPT -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.min.js"></script>
       <!-- EXTERNAL JAVASCRIPT FILE -->
       <script type="text/javascript" src="script.js"></script>
+      <script type="text/javascript" src="app.js"></script>
     </body>
 </html>
