@@ -27,3 +27,5 @@ After the repository has been cloned, click on the index.html and open in browse
 > You can reference the full license [here](https://github.com/jmasaviru/datecape/blob/main/LICENSE).
 
 This project is licensed under the terms of the MIT license.
+
+Live Site: https://jmasaviru.github.io/Datecape/
